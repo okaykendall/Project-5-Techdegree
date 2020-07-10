@@ -1,0 +1,50 @@
+
+*{
+    box-sizing: border-box;
+}
+
+input{
+    margin-top: 1em;
+    display: block;
+    position: relative;
+    left: 30%;
+    width: 500px;
+    border-radius: 25px;
+    height: 40px;
+    border: 1px solid grey;
+}
+
+input::placeholder {
+    padding-left: 10px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2em;
+}
+.first-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.second-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.third-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.main-con {
+    margin: .5em;
+    padding: 1em;
+}
+
+span .lb-caption {
+    text-align: center;
+}
