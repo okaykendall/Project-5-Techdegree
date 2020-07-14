@@ -7,24 +7,20 @@ lightbox.option({
    
   });
 
-  $(document).ready(function() {
-	$('#search').hideseek();
-});
+  function searchPhotos() {
+      let input = document.getElementById("search-put").value
+      input = input.toLowerCase();
+      let images = document.querySelectorAll(".gallery a");
 
-document.getElementById("search").addEventListener("keyup", searchFunction);
+      for (let i = 0; i < images.length; i++) {
+          let imagePut = images [i];
+          let caption = imagePut.getAttribute("data-title");
+          caption = caption.toLowerCase();
 
-function searchFunction() {
-    let input = document.getElementById("search").nodeValue.toLowerCase();
-    let images = document.querySelectorAll(".gallery a");
-    let caption = document.getAttribute("data-title").nodeValue.toLowerCase();
-    for (let i = 0; i < images.length; i ++) {
-        let data = images[i];
-        caption = data.getAttribute("data-title").toLowerCase();
-        if (caption.includes(input)) {
-            images[i].style.display = "";
-        } else {
-            images[i].style.display = "none";
-        }
-    }
-
-}
+          if (caption.includes(input)) {
+              imagePut.style.display = "block";
+          } else {
+              imagePut.style.display = "none";
+          }
+      }
+  }

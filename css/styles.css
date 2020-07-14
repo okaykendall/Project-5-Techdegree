@@ -4,7 +4,7 @@
 }
 
 input{
-    margin-top: 1em;
+    margin-top: 2em;
     display: block;
     position: relative;
     left: 30%;
@@ -14,30 +14,26 @@ input{
     border: 1px solid grey;
 }
 
+#search-put {
+    padding-left: 1em;
+}
+
 input::placeholder {
     padding-left: 10px;
 }
 
+.container {
+    margin: 2em;
+    width: 90%;
+    margin: 0 auto;
+}
+
 .gallery {
+    margin: 0 auto;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 2em;
-}
-.first-row {
-    display: flex;
-    flex-direction: row;
-}
-
-.second-row {
-    display: flex;
-    flex-direction: row;
-}
-
-.third-row {
-    display: flex;
-    flex-direction: row;
+    padding-top: 2em;
 }
 
 .main-con {

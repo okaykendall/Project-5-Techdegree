@@ -10,12 +10,13 @@
 </head>
 <body>
 
+<main class="container">
+
 <div class="searchbar">
-    <input id ="search" name="search" type="text" placeholder="Search.." type="text" data-toggle="hideseek" data-list=".list">
+    <input id ="search-put" onkeyup="searchPhotos()" name="search" type="text" placeholder="Search.." type="text" data-toggle="hideseek" data-list=".list">
 </div>
 
 <div class="gallery list">
-    <div class="first-row">
         <a href="photos/01.jpg" class="main-con" data-lightbox="gallery" data-title="
         I love hay bales. Took this snap on a drive through the countryside past some straw fields.">
         <img src="photos/thumbnails/01.jpg" alt="hay bales" id="hay"></a>
@@ -31,9 +32,7 @@
         <a href="photos/04.jpg" class="main-con" data-lightbox="gallery" data-title="
         It was amazing to see an iceberg up close, it was so cold but didn’t snow today.">
         <img src="photos/thumbnails/04.jpg" alt="glacier mountains" id="iceberg"></a>
-    </div>
-
-    <div class="second-row">
+    
         <a href="photos/05.jpg" class="main-con" data-lightbox="gallery" data-title="The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons.">
         <img src="photos/thumbnails/05.jpg" alt="canyon sunset" id="desert"></a>
         
@@ -46,9 +45,7 @@
         <a href="photos/08.jpg" class="main-con" data-lightbox="gallery" data-title="
         My summer vacation to the Oregon Coast. I love the sandy dunes!">
         <img src="photos/thumbnails/08.jpg" alt="beachy dunes" id="beach dunes"></a>
-    </div>
 
-    <div class="third-row">
         <a href="photos/09.jpg" class="main-con" data-lightbox="gallery" data-title="
         We enjoyed a quiet stroll down this countryside lane.">
         <img src="photos/thumbnails/09.jpg" alt="quiet countryside lane" id="countrysidelane"></a>
@@ -61,11 +58,11 @@
         
         <a href="photos/12.jpg" class="main-con" data-lightbox="gallery" data-title="I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in.">
         <img src="photos/thumbnails/12.jpg" alt="snowy mountain and bluebells" id="bluebells"></a>
-    </div>
-
 </div>
+</main>
+
+<script src="js/jquery-3.5.1.min.js"></script>
 <script src="js/lightbox-plus-jquery.min.js"></script>
-<script src="HideSeek-master/jquery.hideseek.min.js"></script>
 <script src="js/main.js"></script>
 <script>
     $("gallery").lightbox();
