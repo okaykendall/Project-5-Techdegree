@@ -10,11 +10,11 @@
 </head>
 <body>
 
-<div class="searchbar"></div>
-    <input type="text" placeholder="Search..">
+<div class="searchbar">
+    <input id ="search" name="search" type="text" placeholder="Search.." type="text" data-toggle="hideseek" data-list=".list">
 </div>
 
-<div class="container">
+<div class="gallery list">
     <div class="first-row">
         <a href="photos/01.jpg" class="main-con" data-lightbox="gallery" data-title="
         I love hay bales. Took this snap on a drive through the countryside past some straw fields.">
@@ -65,10 +65,11 @@
 
 </div>
 <script src="js/lightbox-plus-jquery.min.js"></script>
+<script src="HideSeek-master/jquery.hideseek.min.js"></script>
+<script src="js/main.js"></script>
 <script>
     $("gallery").lightbox();
 </script>
-<script src="js/main.js"></script>
 
 </body>
 </html>
